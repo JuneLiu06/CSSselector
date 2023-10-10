@@ -1,0 +1,84 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #EAF2F8;
+}
+
+header {
+    background-color: #92caf7;
+    color: #FFFFFF;
+    padding: 2vh 5vw;
+    text-align: center;
+    font-weight: 600;
+}
+
+main {
+    padding: 5vh 10vw;
+}
+
+footer {
+    background-color: #92caf7;
+    color: #ECF0F1;
+    padding: 1vh 5vw;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.description {
+    background-color: #D5E8D4;
+    padding: 3vh 3vw; 
+    font-size: 1.1em;
+    font-family: 'Playfair Display', serif; 
+    margin-bottom: 5vh;
+    border-radius: 5px;
+    border: 1px solid #A2D3A1;
+    text-align: center; 
+}
+
+/* Highlighting style */
+.highlight {
+    background-color: #FFEB3B;
+    padding: 0 5px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 3px;
+}
+
+/* Snowboarding tricks styles */
+.snowboarding {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    background-color: #AED6F1;
+    padding: 3rem;
+    border: 2px solid #3498DB;
+}
+
+.trick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid #D6EAF8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #ECFCE7;
+    border-radius: 5px;
+}
+
+.trick:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.trick img {
+    margin-bottom: 1rem;
+    max-width: 250px;
